@@ -1,0 +1,24 @@
+********************************************************************************
+Training sgcn model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8246
+Training runtime: 23.1022.
+********************************************************************************
+Val ACC of sgcn: 0.8246
+Test ACC of sgcn: 0.8483
+********************************************************************************
+Adversarial training sgcn model by fgsm attack...........
+0 time training..........
+Training: early stopped.
+Model saved in '../saved_models/grb-cora\sgcn\final_model_at_0.pt'.
+********************************************************************************
+Val ACC of sgcn: 0.8209
+Test ACC of sgcn: 0.8731
+********************************************************************************
+Training sgcn model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8284
+Training runtime: 24.7435.
+********************************************************************************
+Val ACC of sgcn: 0.8358
+Test ACC of sgcn: 0.8458

@@ -1,0 +1,21 @@
+********************************************************************************
+Training gat model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8321
+Training runtime: 127.1248.
+********************************************************************************
+Val ACC of gat: 0.8284
+Test ACC of gat: 0.8532
+Training completed.
+********************************************************************************
+Adversarial training gat model by fgsm attack...........
+0 time training..........
+Training: early stopped.
+Model saved in '../saved_models/grb-cora\gat\final_model_at_0.pt'.
+********************************************************************************
+Val ACC of gat: 0.8284
+Test ACC of gat: 0.8420
+Adversarial training finished.
+********************************************************************************
+Training gat model...........
+0 time training..........

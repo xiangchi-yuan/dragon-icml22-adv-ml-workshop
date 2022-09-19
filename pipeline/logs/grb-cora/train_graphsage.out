@@ -1,0 +1,24 @@
+********************************************************************************
+Training graphsage model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8134
+Training runtime: 109.1459.
+********************************************************************************
+Val ACC of graphsage: 0.8172
+Test ACC of graphsage: 0.8383
+********************************************************************************
+Adversarial training graphsage model by fgsm attack...........
+0 time training..........
+Training: early stopped.
+Model saved in '../saved_models/grb-cora\graphsage\final_model_at_0.pt'.
+********************************************************************************
+Val ACC of graphsage: 0.7687
+Test ACC of graphsage: 0.7512
+********************************************************************************
+Training graphsage model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8172
+Training runtime: 121.6965.
+********************************************************************************
+Val ACC of graphsage: 0.8172
+Test ACC of graphsage: 0.8209

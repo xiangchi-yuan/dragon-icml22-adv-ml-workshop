@@ -1,0 +1,24 @@
+********************************************************************************
+Training gin model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8321
+Training runtime: 35.2856.
+********************************************************************************
+Val ACC of gin: 0.8396
+Test ACC of gin: 0.8234
+********************************************************************************
+Adversarial training gin model by fgsm attack...........
+0 time training..........
+Training: early stopped.
+Model saved in '../saved_models/grb-cora\gin\final_model_at_0.pt'.
+********************************************************************************
+Val ACC of gin: 0.8097
+Test ACC of gin: 0.8172
+********************************************************************************
+Training gin model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8284
+Training runtime: 43.5687.
+********************************************************************************
+Val ACC of gin: 0.8358
+Test ACC of gin: 0.8458

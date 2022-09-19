@@ -1,0 +1,24 @@
+********************************************************************************
+Training tagcn model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8209
+Training runtime: 133.0639.
+********************************************************************************
+Val ACC of tagcn: 0.8284
+Test ACC of tagcn: 0.8445
+********************************************************************************
+Adversarial training tagcn model by fgsm attack...........
+0 time training..........
+Training: early stopped.
+Model saved in '../saved_models/grb-cora\tagcn\final_model_at_0.pt'.
+********************************************************************************
+Val ACC of tagcn: 0.8433
+Test ACC of tagcn: 0.8445
+********************************************************************************
+Training tagcn model...........
+0 time training..........
+Training early stopped. Best validation score: 0.8284
+Training runtime: 142.5544.
+********************************************************************************
+Val ACC of tagcn: 0.8284
+Test ACC of tagcn: 0.8445
