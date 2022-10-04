@@ -30,3 +30,7 @@ you can choose model with/without DP here:
 from gatdp import GAT
 
 then run injection_leaderboard.py, note change line53 to "final_model.pt"
+
+editted from
+
+https://github.com/THUDM/grb/tree/master/examples/node_classification
