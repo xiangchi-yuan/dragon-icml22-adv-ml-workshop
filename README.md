@@ -1,6 +1,6 @@
 # grbdp
 
-open filefolder test
+
 
 this is training without AT.
 
