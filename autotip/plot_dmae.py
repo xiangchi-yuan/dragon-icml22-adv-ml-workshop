@@ -336,7 +336,7 @@ attack_dict = {}
 for i in range(6):
     attack_dict[i] = os.path.join(args.save_dir, args.attack + "_vs_" + "gcn_ln", str(i))
 
-for i in range(1, 2):
+for i in range(1, 6):
     if i != 0:
         with open(os.path.join(attack_dict[i], args.attack_adj_name), 'rb') as f:
             adj_attack = pickle.load(f)
@@ -376,7 +376,7 @@ for i in range(1, 2):
     nx.draw_networkx_edges(CoraNet, pos, edgelist=edge_atk, width=0.1,alpha=0.2,  edge_color="red")
     nx.draw_networkx_nodes(CoraNet, pos,node_shape="s", node_size=0.1)
 
-    plt.savefig('atk_1.pdf')
+    plt.savefig('atk_{}.pdf'.format(i))
     plt.show()
     #==============================================================
     train_data, val_data, test_data = T.RandomLinkSplit(num_val=0.05, num_test=0.8,
@@ -407,7 +407,7 @@ for i in range(1, 2):
     nx.draw_networkx_edges(CoraNet, pos, edgelist=edge_recori, width=0.1,alpha=0.2, edge_color="black")
     nx.draw_networkx_edges(CoraNet, pos, edgelist=edge_recatk, width=0.1,alpha=0.2,  edge_color="red")
 
-    plt.savefig('rec_1.pdf')
+    plt.savefig('rec_{}.pdf'.format(i))
     plt.show()
     # save_dir = os.path.join(args.save_dir, args.attack + "_vs_" + "gcn_ln", "dmae" + str(i))
     # utils.save_adj(adj_rec.tocsr(), save_dir)
