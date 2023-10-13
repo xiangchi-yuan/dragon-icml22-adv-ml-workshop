@@ -1,36 +1,29 @@
-# grbdp
+# Guide for MITIGATING SEVERE ROBUSTNESS DEGRADATION ON GRAPHS
 
+This guide provides step-by-step instructions for using the Graph Robustness Benchmark (GRB) library to perform node classification tasks with or without Differential Privacy (DP).
 
+## Training Without Differential Privacy
 
-this is training without AT.
+1. Run the `training.py` script.
+2. In the `training.py` script, you have the option to choose a model with or without DP. Uncomment the appropriate line based on your choice.
+   - Without DP:
+     ```python
+     # from grb.model.dgl import GAT
+     from gatdp import GAT
+     ```
+3. After training, run the `injection_leaderboard.py` script.
 
-run training.py
+## Training With Differential Privacy
 
-you can choose model with/without DP here:
+1. Run the `training.py` script.
+2. In the `training.py` script, make sure to select the raw GCN model initially to create a surrogate model for injection.
+3. After training the GCN model, run the `adv_training.py` script.
+4. In the `adv_training.py` script, you have the option to choose a model with or without DP. Uncomment the appropriate line based on your choice.
+   - With DP:
+     ```python
+     # from grb.model.dgl import GAT
+     from gatdp import GAT
+     ```
+5. Finally, run the `injection_leaderboard.py` script with an additional note: change the line 53 in that script to "final_model.pt".
 
-#from grb.model.dgl import GAT
-
-from gatdp import GAT
-
-then run injection_leaderboard.py
-
-
-this is training with AT.
-
-run training.py
-
-note change the model with raw GCN, first train GCN to make surrogate model for injection.
-
-run adv_training.py
-
-you can choose model with/without DP here:
-
-#from grb.model.dgl import GAT
-
-from gatdp import GAT
-
-then run injection_leaderboard.py, note change line53 to "final_model.pt"
-
-editted from
-
-https://github.com/THUDM/grb/tree/master/examples/node_classification
+For more details and examples, please refer to the [GRB GitHub repository](https://github.com/THUDM/grb/tree/master/examples/node_classification).
