@@ -2,13 +2,13 @@
 
 
 ## Training 
-     ```python
+```python
      $cd autotip
      $python pipeline1_train.py/pipeline1_adv_train.py
      $pipeline2_attack.py
      $pipeline2.5_dmae.py
      $pipeline3_results.py
-     ```
+```
 
 ##Cite
    ```python
