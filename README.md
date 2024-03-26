@@ -10,7 +10,7 @@
      $pipeline3_results.py
 ```
 
-##Cite
+## Cite
    ```python
 @inproceedings{
      yuan2024mitigating,
