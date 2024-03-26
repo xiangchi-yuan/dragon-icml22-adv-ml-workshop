@@ -1,6 +1,5 @@
-# Guide for MITIGATING SEVERE ROBUSTNESS DEGRADATION ON GRAPHS
+# Guide for MITIGATING SEVERE ROBUSTNESS DEGRADATION ON GRAPHS (ICLR 24, ICML Workshop 23)
 
-This guide provides step-by-step instructions for using the Graph Robustness Benchmark (GRB) library to perform node classification tasks with or without Differential Privacy (DP).
 
 ## Training Without Differential Privacy
 
@@ -8,7 +7,7 @@ This guide provides step-by-step instructions for using the Graph Robustness Ben
 2. In the `training.py` script, you have the option to choose a model with or without DP. Uncomment the appropriate line based on your choice.
    - Without DP:
      ```python
-     # from grb.model.dgl import GAT
+     $cd autotip
      from gatdp import GAT
      ```
 3. After training, run the `injection_leaderboard.py` script.
@@ -26,4 +25,3 @@ This guide provides step-by-step instructions for using the Graph Robustness Ben
      ```
 5. Finally, run the `injection_leaderboard.py` script with an additional note: change the line 53 in that script to "final_model.pt".
 
-For more details and examples, please refer to the [GRB GitHub repository](https://github.com/THUDM/grb/tree/master/examples/node_classification).
